@@ -20,11 +20,7 @@
 
 			let FORCE = 100;
 			let SPEED = 450;
-			const title = add([
-				text("HAMSTERS VS TURTLES"),
-				pos(500, 24),
-				{ value: 0 },
-			]);
+			const title = add([text("HAMSTERS VS TURTLES"), pos(500, 24)]);
 			const score = add([text("Score:0"), pos(100, 24), { value: 0 }]);
 			// add character to screen, from a list of components
 			const player2 = add([
@@ -69,11 +65,6 @@
 			});
 			onKeyDown("d", () => {
 				player2.move(SPEED, 0);
-			});
-
-			player1.onCollide("turtle", () => {
-				score.value += 1;
-				score.text = "Score:" + score.value;
 			});
 		</script>
 	</body>
