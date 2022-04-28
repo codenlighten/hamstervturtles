@@ -60,6 +60,15 @@
 			onKeyDown("right", () => {
 				player1.move(SPEED, 0);
 			});
+			onKeyDown("w", () => {
+				player2.jump(200);
+			});
+			onKeyDown("a", () => {
+				player2.move(-SPEED, 0);
+			});
+			onKeyDown("d", () => {
+				player2.move(SPEED, 0);
+			});
 		</script>
 	</body>
 </html>
