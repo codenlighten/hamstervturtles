@@ -27,13 +27,13 @@
 			]);
 			const score = add([text("Score:0"), pos(1000, 24), { value: 0 }]);
 			// add character to screen, from a list of components
-			const player1 = add([
+			const player2 = add([
 				sprite("hamster"), // renders as a sprite
 				pos(150, 80), // position in world
 				area(), // has a collider
 				body(), // responds to physics and gravity
 			]);
-			const player2 = add([
+			const player1 = add([
 				sprite("turtle"), // renders as a sprite
 				pos(250, 80), // position in world
 				area(), // has a collider
